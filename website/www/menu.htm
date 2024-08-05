@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="E9DFBE" onLoad="MM_preloadImages('img/menudef/bar_over.gif','img/menudef/hum_over.gif','img/menudef/ear_over.gif','img/menudef/kitcon_over.gif','img/menudef/kitcyl_over.gif','img/menudef/medind_over.gif','img/menudef/meding_over.gif','img/menudef/pet_over.gif','img/menudef/woodcor_over.gif','img/menudef/woodrack_over.gif','img/menudef/bar_click.gif','img/menudef/hum_click.gif','img/menudef/ear_click.gif','img/menudef/kitcon_click.gif','img/menudef/kitcyl_click.gif','img/menudef/medind-click.gif','img/menudef/meding_click.gif','img/menudef/pet_click.gif','img/menudef/woodcor_click.gif','img/menudef/woodrack_click.gif','img/bagpipesimg/medind.jpg')">
+<p align="right"><a href="text/mediaevalind.htm" onMouseDown="MM_nbGroup('down','group1','medind','img/menudef/medind-click.gif',1);MM_swapImage('foto?foto','','img/bagpipesimg/medind.jpg',1)" onMouseOver="MM_nbGroup('over','medind','img/menudef/medind-over.gif','img/menudef/medind-click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="medind" src="img/menudef/medind.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/mediaevaling.htm" onMouseDown="MM_nbGroup('down','group1','meding','img/menudef/meding_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/meding.jpg',1)" onMouseOver="MM_nbGroup('over','meding','img/menudef/meding_over.gif','img/menudef/meding_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="meding" src="img/menudef/meding.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/petitecornemuse.htm" onMouseDown="MM_nbGroup('down','group1','pet','img/menudef/pet_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/petite.jpg',1)" onMouseOver="MM_nbGroup('over','pet','img/menudef/pet_over.gif','img/menudef/pet_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="pet" src="img/menudef/pet.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/hummelchen.htm" onMouseDown="MM_nbGroup('down','group1','hum','img/menudef/hum_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/hum.jpg',1)" onMouseOver="MM_nbGroup('over','hum','img/menudef/hum_over.gif','img/menudef/hum_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="hum" src="img/menudef/hum.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/earlymusette.htm" onMouseDown="MM_nbGroup('down','group1','ear','img/menudef/ear_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/early.jpg',1)" onMouseOver="MM_nbGroup('over','ear','img/menudef/ear_over.gif','img/menudef/ear_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="ear" src="img/menudef/ear.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/baroquemusette.htm" onMouseDown="MM_nbGroup('down','group1','bar','img/menudef/bar_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/bar.jpg',1)" onMouseOver="MM_nbGroup('over','bar','img/menudef/bar_over.gif','img/menudef/bar_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="bar" src="img/menudef/bar.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/fatkitcon.htm" onMouseDown="MM_nbGroup('down','group1','kitcon','img/menudef/kitcon_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/fatcon.jpg',1)" onMouseOver="MM_nbGroup('over','kitcon','img/menudef/kitcon_over.gif','img/menudef/kitcon_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="kitcon" src="img/menudef/kitcon.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/fatkitcyl.htm" onMouseDown="MM_nbGroup('down','group1','kitcyl','img/menudef/kitcyl_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/fatcyl.jpg',1)" onMouseOver="MM_nbGroup('over','kitcyl','img/menudef/kitcyl_over.gif','img/menudef/kitcyl_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="kitcyl" src="img/menudef/kitcyl.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/corn.htm" onMouseDown="MM_nbGroup('down','group1','woodcor','img/menudef/woodcor_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/woodcorn.jpg',1)" onMouseOver="MM_nbGroup('over','woodcor','img/menudef/woodcor_over.gif','img/menudef/woodcor_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="woodcor" src="img/menudef/woodcor.gif" border="0" onLoad="" width="126" height="33"><br>
+  </a><a href="text/rackets.htm" onMouseDown="MM_nbGroup('down','group1','woodrack','img/menudef/woodrack_click.gif',1); MM_swapImage('foto?foto','','img/bagpipesimg/rackets.jpg',1)" onMouseOver="MM_nbGroup('over','woodrack','img/menudef/woodrack_over.gif','img/menudef/woodrack_click.gif',1)" onMouseOut="MM_nbGroup('out')" target="tekst"><img name="woodrack" src="img/menudef/woodrack.gif" border="0" onLoad="" width="126" height="35"></a><br>
+</p>
+</body>
+</html>

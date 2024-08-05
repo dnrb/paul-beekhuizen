@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#E9DFBE" onLoad="MM_preloadImages('imagesa/menu4_01.gif','imagesa/menu4_02.gif','imagesc/menu4_01_click.gif','imagesc/menu4_01_over.gif','imagesc/menu4_02_click.gif','imagesc/menu4_02_over.gif','imagesc/menu4_03_click.gif','imagesc/menu4_03_over.gif','imagesc/menu4_04_click.gif','imagesc/menu4_04_over.gif','imagesc/menu4_05_click.gif','imagesc/menu4_05_over.gif','imagesc/menu4_06_click.gif','imagesc/menu4_06_over.gif','imagesc/menu4_07_click.gif','imagesc/menu4_07_over.gif','imagesc/menu4_08_click.gif','imagesc/menu4_08_over.gif','imagesc/menu4_09_click.gif','imagesc/menu4_09_over.gif','imagesc/menu4_10_click.gif','imagesc/menu4_10_over.gif')">
+<table border="0" cellpadding="0" cellspacing="0" align="right">
+  <tr>
+    <td><a href="mediaevalind.htm" onClick="MM_nbGroup('down','group1','mediaevalpipesind','imagesc/menu4_01_click.gif',1)" onMouseOver="MM_nbGroup('over','mediaevalpipesind','imagesc/menu4_01_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="mediaevalpipesind" src="imagesc/menu4_01.gif" border="0" onLoad="" alt="Mediaeval Pipes in d"></a></td>
+  </tr>
+  <tr>
+    <td><a href="mediaevaling.htm" onClick="MM_nbGroup('down','group1','mediaevalpipesing','imagesc/menu4_02_click.gif',1)" onMouseOver="MM_nbGroup('over','mediaevalpipesing','imagesc/menu4_02_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="mediaevalpipesing" src="imagesc/menu4_02.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="petitecornemuse.htm" onClick="MM_nbGroup('down','group1','petitecornemuse','imagesc/menu4_03_click.gif',1)" onMouseOver="MM_nbGroup('over','petitecornemuse','imagesc/menu4_03_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="petitecornemuse" src="imagesc/menu4_03.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="hummelchen.htm" onClick="MM_nbGroup('down','group1','hummelchen','imagesc/menu4_04_click.gif',1)" onMouseOver="MM_nbGroup('over','hummelchen','imagesc/menu4_04_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="hummelchen" src="imagesc/menu4_04.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="earlymusette.htm" onClick="MM_nbGroup('down','group1','earlymusettes','imagesc/menu4_05_click.gif',1)" onMouseOver="MM_nbGroup('over','earlymusettes','imagesc/menu4_05_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="earlymusettes" src="imagesc/menu4_05.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="baroquemusette.htm" onClick="MM_nbGroup('down','group1','baroquemusette','imagesc/menu4_06_click.gif',1)" onMouseOver="MM_nbGroup('over','baroquemusette','imagesc/menu4_06_over.gif','',1)" onMouseOut="MM_nbGroup('out')" target="master"><img name="baroquemusette" src="imagesc/menu4_06.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="MM_nbGroup('down','group1','fatkitchenpipesconical','imagesc/menu4_07_click.gif',1)" onMouseOver="MM_nbGroup('over','fatkitchenpipesconical','imagesc/menu4_07_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="fatkitchenpipesconical" src="imagesc/menu4_07.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="MM_nbGroup('down','group1','fatkitchenpipescylindrical','imagesc/menu4_08_click.gif',1)" onMouseOver="MM_nbGroup('over','fatkitchenpipescylindrical','imagesc/menu4_08_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="fatkitchenpipescylindrical" src="imagesc/menu4_08.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="MM_nbGroup('down','group1','woodwindcornamuses','imagesc/menu4_09_click.gif',1)" onMouseOver="MM_nbGroup('over','woodwindcornamuses','imagesc/menu4_09_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="woodwindcornamuses" src="imagesc/menu4_09.gif" border="0" onLoad=""></a></td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="MM_nbGroup('down','group1','woodwindrackets','imagesc/menu4_10_click.gif',1)" onMouseOver="MM_nbGroup('over','woodwindrackets','imagesc/menu4_10_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="woodwindrackets" src="imagesc/menu4_10.gif" border="0" onLoad=""></a></td>
+  </tr>
+</table>
+</body>
+</html>
