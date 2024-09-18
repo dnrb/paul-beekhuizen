@@ -6,7 +6,7 @@ De praktische, belichaamde kennis van het bouwen ligt natuurlijk niet in deze do
 Voor vragen, gelieve contact op te nemen met Barend Beekhuizen (barendbeekhuizen@gmail.com)
 
 Over the course of his five decades of building musical instruments (early woodwinds, in particular), Paul Beekhuizen created an extensive documentation of the instruments he built. 
-The practical, embodied knowledge of building such instruments is obviously not contained in this documentation, but in the hopes that it might help other builders, I deceded to make it available through this website
+The practical, embodied knowledge of building such instruments is obviously not contained in this documentation, but in the hopes that it might help other builders, I decided to make it available through this website
 
 For questions, please reach out to Barend Beekhuizen (barendbeekhuizen@gmail.com)
 
