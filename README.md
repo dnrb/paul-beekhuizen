@@ -1,7 +1,5 @@
 # Archief Paul Beekhuizen
 
-![Paul aan het bouwen](https://github.com/dnrb/paul-beekhuizen/blob/main/bouwfoto.jpeg-1.jpg/)
-
 In de vijf decennia dat hij werkzaam was als instrumentenbouwer (vroege dubbelrietinstrumenten in het bijzonder) heeft Paul Beekhuizen een uitgebreide documentatie gecreeerd van de instrumenten die hij bouwde. 
 De praktische, belichaamde kennis van het bouwen ligt natuurlijk niet in deze documentatie besloten, maar in de hoop dat het andere bouwers helpt, maak ik middels deze website de documentatie toegankelijk.
 
