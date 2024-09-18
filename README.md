@@ -16,3 +16,5 @@ Inhoud/Contents:
 * [Foto's van instrumenten / Photos of instruments](https://github.com/dnrb/paul-beekhuizen/blob/main/instrumenten/)
 * [Recensies en programma's / Reviews and programs](https://github.com/dnrb/paul-beekhuizen/blob/main/recensies_programmas/)
 * [Website](https://github.com/dnrb/paul-beekhuizen/blob/main/website/www/)
+
+Download alle bestanden als zip bestand / Download all files as a zip file: [klik hier / click here](https://github.com/dnrb/paul-beekhuizen/archive/refs/heads/main.zip)
